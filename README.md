@@ -4,14 +4,14 @@
 <font face="仿宋" >之所以说“半自动”因为验证码还得手动填写o(╥﹏╥)o</font>
 ## 代码步骤
 ### 1. 发票信息填写
-发票信息如发票代码、发票号码、发票时间、税前金额需先行填写在excel中，如[invoice_sample.xlsx]()所示
+发票信息如发票代码、发票号码、发票时间、税前金额需先行填写在excel中，如[invoice_sample.xlsx](https://github.com/Snowing-ST/invoice_checking/blob/master/invoice_sample.xlsx)所示
 |业务编号|	发票代码|	发票号码|	发票日期|	税前金额|
 |  ----  | ----  | ----  | ----  | ----  |
 |ABC2019FP00004|	3400183130|	02049280|	20181225	|471495.24 |
 |ABC2019FP00004|	3400183130|	02049281	|20181225|	937220.75 |
 
 ### 2. 自动填写表单
-运行[invoice_checking.py](),提示填写excel表格的路径，填写完毕回车后，selenium库的webdriver将打开谷歌浏览器，自动登陆[国家税务总局全国增值税发票查验平台](https://inv-veri.chinatax.gov.cn/index.html)，自动填写发票信息，**<font color=#FF0000 >验证码需手动输入程序端，不能输在网页上</font>**，如果输错等待浏览器自动跳转，**<font color=#FF0000 >不要点击浏览器任何按钮</font>**，再次在程序端输入验证码。
+运行[invoice_checking.py](https://github.com/Snowing-ST/invoice_checking/blob/master/invoice_checking.py),提示填写excel表格的路径，填写完毕回车后，selenium库的webdriver将打开谷歌浏览器，自动登陆[国家税务总局全国增值税发票查验平台](https://inv-veri.chinatax.gov.cn/index.html)，自动填写发票信息，**<font color=#FF0000 >验证码需手动输入程序端，不能输在网页上</font>**，如果输错等待浏览器自动跳转，**<font color=#FF0000 >不要点击浏览器任何按钮</font>**，再次在程序端输入验证码。
 
 <font size=2 >注：使用selenium库的webdriver打开谷歌浏览器需到[此处](http://chromedriver.storage.googleapis.com/index.html)下载chromedriver.exe，注意下载版本一定要和电脑中谷歌浏览器版本一致！并将该文件放入excel文件的目录下（可在代码中修改存放路径）</font>
 
