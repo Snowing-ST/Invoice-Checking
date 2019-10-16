@@ -5,6 +5,8 @@
 ## 代码步骤
 ### 1. 发票信息填写
 发票信息如发票代码、发票号码、发票时间、税前金额需先行填写在excel中，如[invoice_sample.xlsx](https://github.com/Snowing-ST/invoice_checking/blob/master/invoice_sample.xlsx)所示
+
+
 |业务编号|	发票代码|	发票号码|	发票日期|	税前金额|
 |  ----  | ----  | ----  | ----  | ----  |
 |ABC2019FP00004|	3400183130|	02049280|	20181225	|471495.24 |
